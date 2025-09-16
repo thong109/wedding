@@ -3057,7 +3057,8 @@
 
     #w-20t4ngj1 {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 800px
@@ -3073,6 +3074,9 @@
 
     #w-20t4ngj1 .section-background {
       background: center center/cover no-repeat content-box border-box var(--sf-img-0);
+      width: inherit;
+      left: 50%;
+      transform: translateX(-50%);
       --type: 0
     }
 
@@ -3378,7 +3382,8 @@
 
     #w-9wu79djo {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 714px
@@ -3546,12 +3551,13 @@
     }
 
     #w-y7yn4bui .image-background {
-      width: 404.64220183486236px;
+      width: 375px;
       height: 544px;
-      top: -59px;
-      left: -28.76350662589195px;
-      background: center center/cover no-repeat scroll content-box border-box var(--sf-img-8);
-      --type: 0
+      top: -145px;
+      left: 50%;
+      background: center center / contain no-repeat scroll content-box border-box var(--sf-img-8);
+      --type: 0;
+      transform: translateX(-50%);
     }
 
     #w-aqbkkztv {
@@ -3650,7 +3656,8 @@
 
     #w-0k5qs9kr {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 515px
@@ -3940,7 +3947,8 @@
 
     #w-rs50dgw2 {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 605px
@@ -4038,7 +4046,7 @@
     }
 
     #w-oq2hoi54 {
-      top: 96.31942749023438px;
+      top: 76.319427px;
       left: 62.5px;
       width: 295px;
       height: 42.000003814697266px
@@ -4093,7 +4101,8 @@
 
     #w-j6a4d4fc {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 522px
@@ -4319,7 +4328,8 @@
 
     #w-4vfmj0g5 {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 632px
@@ -4494,7 +4504,8 @@
 
     #w-ygrcn8t3 {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 563px
@@ -4607,7 +4618,8 @@
 
     #w-hcf6fbgo {
       top: 0px;
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
       position: relative;
       width: 420px;
       height: 630px

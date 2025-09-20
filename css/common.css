@@ -1,42 +1,42 @@
 @font-face {
   font-family: "UTM-Sloop-1";
-  src: url(../fonts/UTM-Sloop-1.ttf) format("truetype");
+  src: url(../../fonts/UTM-Sloop-1.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "UTM-Cafeta";
-  src: url(../fonts/UTM-Cafeta.ttf) format("truetype");
+  src: url(../../fonts/UTM-Cafeta.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Ephesis-Regular";
-  src: url(../fonts/Ephesis-Regular.ttf) format("truetype");
+  src: url(../../fonts/Ephesis-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "SVN-Mightiest";
-  src: url(../fonts/SVN-Mightiest.otf) format("truetype");
+  src: url(../../fonts/SVN-Mightiest.otf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "UTM-Azkia";
-  src: url(../fonts/UTM-Azkia.ttf) format("truetype");
+  src: url(../../fonts/UTM-Azkia.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Arial";
-  src: url(../fonts/Arial.ttf) url(../fonts/Arialn.ttf) format("truetype");
+  src: url(../../fonts/Arial.ttf) url(../../fonts/Arialn.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Black Mango";
-  src: url(../fonts/Black-Mango-Medium.ttf) format("truetype");
+  src: url(../../fonts/Black-Mango-Medium.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }

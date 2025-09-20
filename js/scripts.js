@@ -105,6 +105,56 @@ return;
     });
   };
 
+  const buttonMain = () => {
+    const button = document.querySelector('#button-main');
+    const mainCommon = document.querySelector('.main-common');
+    const audio = document.getElementById('wc-bg-music');
+    const btn = document.getElementById('wc-music-cover');
+    const off = document.querySelector('.is-off');
+    const on = document.querySelector('.is-on');
+
+    const updateIcon = () => {
+      if (!audio.paused && !audio.muted) {
+        off.classList.remove('is-active');
+        off.classList.add('hidden');
+        on.classList.add('is-active');
+      } else {
+        off.classList.add('is-active');
+        off.classList.remove('hidden');
+        on.classList.remove('is-active');
+      }
+    };
+
+    const tryPlay = (unmuted = true) => {
+      audio.muted = !unmuted;
+      audio.volume = unmuted ? 1 : 0;
+      return audio.play();
+    };
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        tryPlay(true)
+          .catch(() => tryPlay(false))
+          .finally(updateIcon);
+      } else {
+        audio.pause();
+        updateIcon();
+      }
+    });
+
+    button.addEventListener('click', () => {
+      mainCommon.classList.remove('is-animation');
+
+      requestAnimationFrame(() => {
+        mainCommon.classList.add('is-active');
+      });
+
+      tryPlay(true)
+        .catch(() => tryPlay(false))
+        .finally(updateIcon);
+    });
+  };
+
   window.WebFontConfig = {
     custom: {
       families: [ 'Roboto:n4,n5,n6,n7' ],
@@ -127,5 +177,6 @@ return;
     modalQr();
     gsapAnimation();
     tabs();
+    buttonMain();
   });
 })();

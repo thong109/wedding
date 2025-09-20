@@ -145,9 +145,15 @@ return;
     button.addEventListener('click', () => {
       mainCommon.classList.remove('is-animation');
 
-      requestAnimationFrame(() => {
-        mainCommon.classList.add('is-active');
-      });
+      const before = window.getComputedStyle(mainCommon, '::before').transform;
+      const after = window.getComputedStyle(mainCommon, '::after').transform;
+
+      mainCommon.style.setProperty('--before-transform', before);
+      mainCommon.style.setProperty('--after-transform', after);
+
+      void mainCommon.offsetWidth;
+
+      mainCommon.classList.add('is-active');
 
       tryPlay(true)
         .catch(() => tryPlay(false))

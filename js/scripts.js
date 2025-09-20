@@ -143,6 +143,7 @@ return;
     });
 
     button.addEventListener('click', () => {
+      button.disabled = true;
       mainCommon.classList.remove('is-animation');
 
       const before = window.getComputedStyle(mainCommon, '::before').transform;

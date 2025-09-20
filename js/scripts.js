@@ -60,7 +60,7 @@ closeModal();
       gsap.from(item, {
         y: 100,
         opacity: 0,
-        duration: 1,
+        duration: 1.5,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: item,
@@ -155,9 +155,32 @@ return;
 
       mainCommon.classList.add('is-active');
 
+      const wrap = document.getElementById('heart-wrap');
+      const fallHearts = HeartAnimator(wrap, { effect: 'fall' });
+      fallHearts.trigger(true);
+
       tryPlay(true)
         .catch(() => tryPlay(false))
         .finally(updateIcon);
+    });
+  };
+
+  const scrollClass = () => {
+    const wrap = document.getElementById('heart-wrap');
+    const fallHearts = HeartAnimator(wrap, { effect: 'fall' });
+
+    const target = document.querySelector('.js-scroll');
+
+    window.addEventListener('scroll', () => {
+      if (!target) {
+return;
+}
+
+      const rect = target.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        fallHearts.trigger(true);
+      }
     });
   };
 
@@ -184,5 +207,6 @@ return;
     gsapAnimation();
     tabs();
     buttonMain();
+    scrollClass();
   });
 })();
